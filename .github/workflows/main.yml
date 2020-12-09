@@ -6,7 +6,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: jiro4989/setup-nim-action@v1
         with:
-          nim-version: '1.5.1'
+          nim-version: 'devel'
       - uses: juancarlospaco/nimlint-action@main
       # Uncomment this to commit all Nimlint fixes back to the Git repo.
       # - name: Commit Nimlint Fixes
