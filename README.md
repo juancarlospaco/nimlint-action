@@ -19,8 +19,8 @@ jobs:
 
 # Options
 
-- `verbose` Optional, boolean, defaults to `false`.
 - `folders` Optional, comma separated list of folders, defaults to `"."`.
+- `verbose` Optional, boolean, defaults to `false`.
 
 
 Examples:
@@ -28,15 +28,13 @@ Examples:
 ```yml
 - uses: juancarlospaco/nimlint-action@main
   with:
-    verbose: true
-    folders: "src,docs,examples"
+    folders: "src,examples,tutorial,lib"
 ```
 
 
 ```yml
 - uses: juancarlospaco/nimlint-action@main
   with:
-    indent: false
     folders: "src"
 ```
 
