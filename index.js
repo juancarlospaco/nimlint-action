@@ -38,9 +38,12 @@ const walk = (startPath, callback) => {
 
 const walks = (currentValue, index) => {
   console.log("\nfolder\t'" + currentValue + "'");
+  const verbose = cfg('verbose');
   walk(currentValue, function (filename) {
-    const cmd = `nimlint --verbose:${ cfg('verbose') } --output:${ filename } --input:${ filename }`;
-    console.log(cmd);
+    const cmd = `nimlint --verbose:${ verbose } --output:${ filename } --input:${ filename }`;
+    if (verbose) {
+      console.log(cmd);
+    };
     exec(cmd, (err, stdout, stderr) => {
       if (err) {
         core.setFailed(`${stderr} ${stdout} ${err}`);

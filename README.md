@@ -6,6 +6,7 @@
 # Examples
 
 - https://github.com/juancarlospaco/nimlint-action/runs/1527448356?check_suite_focus=true#step:4:9
+- https://github.com/juancarlospaco/nimlint-action/runs/1527464129?check_suite_focus=true#step:4:9
 
 
 # Use
@@ -24,8 +25,8 @@ jobs:
 
 # Options
 
-- `folders` Optional, comma separated list of folders, defaults to `"."`.
-- `verbose` Optional, boolean, defaults to `false`.
+- `folders` Comma separated list of folders, optional, defaults to `"."`.
+- `verbose` Verbose, optional, boolean, defaults to `false`.
 
 
 Examples:
