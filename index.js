@@ -40,6 +40,7 @@ const walks = (currentValue, index) => {
   console.log("\nfolder\t'" + currentValue + "'");
   walk(currentValue, function (filename) {
     const cmd = `nimlint --verbose:${ cfg('verbose') } --output:${ filename } --input:${ filename }`;
+    console.log(cmd);
     exec(cmd, (err, stdout, stderr) => {
       if (err) {
         core.setFailed(`${stderr} ${stdout} ${err}`);

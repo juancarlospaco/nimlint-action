@@ -3,6 +3,11 @@
 - [GitHub Action](https://github.com/features/actions) to auto-lint all your Nim source code files using [nimlint](https://github.com/nim-compiler-dev/nimlint).
 
 
+# Examples
+
+- https://github.com/juancarlospaco/nimlint-action/runs/1527448356?check_suite_focus=true#step:4:9
+
+
 # Use
 
 ```yaml
