@@ -1,0 +1,17 @@
+name: 'nimlint-action'
+description: 'Nimlint GitHub Action'
+inputs:
+  folders:
+    description: 'Folders to start recursive walking from'
+    required: false
+    default: '.'
+  verbose:
+    description: '--verbose'
+    required: false
+    default: false
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'eye'
+  color: 'yellow'
