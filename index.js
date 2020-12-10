@@ -37,6 +37,7 @@ const walk = (startPath, callback) => {
 
 
 const walks = (currentValue, index) => {
+  console.assert(currentValue.length > 0);
   console.log("\nfolder\t'" + currentValue + "'");
   const verbose = cfg('verbose') === "true";
   walk(currentValue, function (filename) {
