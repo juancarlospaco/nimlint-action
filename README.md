@@ -19,6 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: jiro4989/setup-nim-action@v1
+        with:
+          nim-version: 'devel'
       - uses: juancarlospaco/nimlint-action@main
 ```
 
