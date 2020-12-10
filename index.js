@@ -38,10 +38,10 @@ const walk = (startPath, callback) => {
 
 const walks = (currentValue, index) => {
   console.log("\nfolder\t'" + currentValue + "'");
-  const verbose = cfg('verbose');
+  const verbose = cfg('verbose') === "true";
   walk(currentValue, function (filename) {
     const cmd = `nimlint --verbose:${ verbose } --output:${ filename } --input:${ filename }`;
-    if (verbose === "true") {
+    if (verbose) {
       console.log(cmd);
     };
     exec(cmd, (err, stdout, stderr) => {
