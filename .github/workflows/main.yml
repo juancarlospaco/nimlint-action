@@ -8,6 +8,8 @@ jobs:
         with:
           nim-version: 'devel'
       - uses: juancarlospaco/nimlint-action@main
+        with:
+          verbose: true
       # Uncomment this to commit all Nimlint fixes back to the Git repo.
       # - name: Commit Nimlint Fixes
       #   uses: EndBug/add-and-commit@v5  # https://github.com/EndBug/add-and-commit
