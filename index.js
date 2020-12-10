@@ -41,7 +41,7 @@ const walks = (currentValue, index) => {
   const verbose = cfg('verbose');
   walk(currentValue, function (filename) {
     const cmd = `nimlint --verbose:${ verbose } --output:${ filename } --input:${ filename }`;
-    if (verbose) {
+    if (verbose === "true") {
       console.log(cmd);
     };
     exec(cmd, (err, stdout, stderr) => {
